@@ -1,0 +1,108 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "baa8e5e1-fa08-4512-b3e7-fe36d00feb4d": {
+        "id": "baa8e5e1-fa08-4512-b3e7-fe36d00feb4d",
+        "parent": null,
+        "name": "test.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "test"
+        },
+        "triggers": [
+          {
+            "resourceName": "s3sigmahirutest",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "test",
+              "keySuffix": ".txt"
+            }
+          }
+        ],
+        "lastUpdated": 1603698239206
+      }
+    },
+    "openFiles": [
+      "baa8e5e1-fa08-4512-b3e7-fe36d00feb4d"
+    ],
+    "currentFileId": "baa8e5e1-fa08-4512-b3e7-fe36d00feb4d",
+    "resources": {
+      "s3sigmahirutest": {
+        "name": "s3sigmahirutest",
+        "type": "S3",
+        "config": {
+          "mode": 0,
+          "bucket": {
+            "name": "sigmahirutest"
+          }
+        }
+      },
+      "ses-hirudineel@gmail.com": {
+        "name": "ses-hirudineel@gmail.com",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "hirudineel@gmail.com",
+          "projectRegion": "us-west-2"
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false,
+        "varValue": null
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-west-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1603698548589
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-sigma-1603698583989",
+      "url": "https://github.com/HirudineeADRT/test-sigma-1603698583989"
+    }
+  }
+}
